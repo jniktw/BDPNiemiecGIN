@@ -1,0 +1,80 @@
+Create Extension postgis;
+
+Create Table drogi(id INT Primary Key, geometria geometry, nazwa varchar(20));
+
+Insert into drogi
+Values
+(1,ST_GeomFromText('Linestring(0 4.5,12 4.5)', 0), 'RoadX'),
+(2,ST_GeomFromText('Linestring(7.5 10.5,7.5 0)', 0), 'RoadY');
+
+Create Table budynki(id INT Primary Key, geometria geometry, nazwa varchar(20), wysokosc int);
+
+Insert into budynki
+Values
+(1,ST_GeomFromText('Polygon((8 4,10.5 4,10.5 1.5,8 1.5,8 4))', 0), 'BuildingA',7),
+(2,ST_GeomFromText('Polygon((4 7,6 7,6 5,4 5,4 7))', 0), 'BuildingB',4),
+(3,ST_GeomFromText('Polygon((3 8,5 8,5 6,3 6,3 8))', 0), 'BuildingC',8),
+(4,ST_GeomFromText('Polygon((9 9,10 9,10 8,9 8,9 9))', 0), 'BuildingD', 15),
+(5,ST_GeomFromText('Polygon((1 2,2 2,2 1,1 1,1 2))', 0), 'BuildingF',6);
+
+Create Table pktinfo(id INT Primary Key, geometria geometry, nazwa varchar(20), liczprac int);
+
+Insert into pktinfo
+Values
+(1,ST_GeomFromText('Point(1 3.5)', 0), 'G',4),
+(2,ST_GeomFromText('Point(5.5 1.5)', 0), 'H',2),
+(3,ST_GeomFromText('Point(9.5 6)', 0), 'I',0),
+(4,ST_GeomFromText('Point(6.5 6)', 0), 'J',3),
+(5,ST_GeomFromText('Point(6 9.5)', 0), 'K',1);
+
+-- 1
+
+Select Sum(ST_Length(geometria)) as Suma from drogi
+
+-- 2
+
+Select geometria, ST_Area(geometria) as Pole, ST_Perimeter(geometria) as Obwod from budynki where nazwa = 'BuildingA'
+
+-- 3
+
+Select nazwa, ST_Area(geometria) as Pole from budynki order by nazwa
+
+-- 4
+
+Select nazwa, ST_Perimeter(geometria) 
+as Obwód from budynki 
+order by ST_Area(geometria) desc 
+limit 2
+
+-- 5
+
+Select ST_distance(pktinfo.geometria,budynki.geometria) 
+from budynki, pktinfo 
+where pktinfo.nazwa = 'G' 
+AND budynki.nazwa = 'BuildingC'
+
+-- 6
+
+select ST_Area(
+    ST_Difference(b.geometria,
+        ST_Buffer(a.geometria,0.5)
+                 )) from budynki a, budynki b 
+                 where a.nazwa='BuildingB' and b.nazwa='BuildingC'
+                 
+-- 7
+
+Select b.id, b.geometria, b.nazwa, b.wysokosc from drogi a, budynki b 
+where a.nazwa='RoadX' 
+And ST_Y(ST_Centroid(b.geometria)) > ST_Y(ST_Centroid(a.geometria));
+
+-- 8
+
+Select ST_Area(
+    ST_SymDifference(
+        geometria,ST_GeomFromText('Polygon((4 7, 6 7, 6 8, 4 8, 4 7))', 0)
+    )
+) from budynki where nazwa='BuildingC';
+
+drop table budynki;
+drop table drogi;
+drop table pktinfo
