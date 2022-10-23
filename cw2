@@ -1,0 +1,53 @@
+create extension postgis
+
+
+-- 4
+
+select count(distinct a.gid) 
+from popp a, rivers b 
+where st_distance(a.geom, b.geom) < 1000 and a.f_codedesc = 'Building'
+
+CREATE TABLE tableB AS select a.* 
+from popp a, rivers b 
+group by a.gid
+having min(st_distance(a.geom, b.geom)) < 1000 and a.f_codedesc = 'Building'
+
+-- 5
+
+CREATE TABLE AirportsNew AS select name, elev, geom 
+from airports
+Select * from AirportsNew
+
+-- 5a
+
+Select * from AirportsNew where ST_X(geom) = (Select min(ST_X(geom)) from AirportsNew)
+or ST_X(geom) = (Select max(ST_X(geom)) from AirportsNew)
+
+-- 5b
+
+Insert into AirportsNew
+Values
+('lotnisko',150.00,ST_Centroid
+ (ST_Makeline(
+     (Select geom from AirportsNew 
+     where ST_X(geom) = (Select min(ST_X(geom)) from AirportsNew)
+ ),(Select geom from AirportsNew 
+    where ST_X(geom) = (Select max(ST_X(geom)) from AirportsNew))
+ )))
+
+-- 6
+Select ST_Area(ST_Buffer(ST_ShortestLine(a.geom, b.geom),1000)) 
+from airports a, lakes b 
+where b.names = 'Iliamna Lake' and a.name = 'AMBLER' 
+
+-- 7
+
+Select trees.vegdesc, sum(ST_Area(ST_Intersection(trees.geom, swamp.geom))) + 
+sum(ST_Area(ST_Difference(ST_Intersection(trees.geom, tundra.geom),
+                          ST_Intersection(tundra.geom, swamp.geom))))
+from trees, swamp, tundra
+where ST_Area(ST_Intersection(trees.geom, swamp.geom)) != 0
+and ST_Area(ST_Intersection(trees.geom, tundra.geom)) != 0
+group by trees.vegdesc
+
+
