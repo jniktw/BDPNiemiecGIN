@@ -1,0 +1,58 @@
+create temp table a as Select distinct * from public.t2019_kar_buildings where polygon_id not in 
+(
+    Select distinct t2019_kar_buildings.polygon_id from
+    public.t2019_kar_buildings, public.t2018_kar_buildings 
+    where ST_Contains(t2018_kar_buildings.geom,t2019_kar_buildings.geom)
+)
+
+--2
+
+Select public.t2019_kar_poi_table.type, count(distinct public.t2019_kar_poi_table.*) from public.t2019_kar_poi_table, a where public.t2019_kar_poi_table.gid not in 
+(
+    Select distinct public.t2019_kar_poi_table.gid 
+    from public.t2018_kar_poi_table,public.t2019_kar_poi_table
+    where public.t2019_kar_poi_table.POI_ID in (Select POI_ID from public.t2018_kar_poi_table)
+)
+And ST_Contains(ST_Buffer(a.geom,300),public.t2019_kar_poi_table.geom)
+group by public.t2019_kar_poi_table.type
+select * from public.t2019_kar_poi_table
+--3
+
+Create table street_reprojected as select gid, link_id, st_name
+ref_in_id, nref_in_id, func_class, speed_cat, fr_speed_l, to_speed_l, dir_travel
+,ST_Transform(geom,3068) 
+from public.t2019_kar_streets
+
+--4
+
+create table input_points (geom geometry);
+
+insert into input_points values 
+(ST_Geomfromtext('POINT(8.36093 49.03174)',4326)),
+(ST_Geomfromtext('POINT(8.39876 49.00644)',4326))
+
+--5
+
+Update input_points 
+set geom = ST_Transform(geom,3068)
+
+Select ST_Astext(geom) from input_points
+
+--6
+
+Select * from public.t2019_kar_street_node
+where ST_Contains(ST_Buffer((Select ST_Makeline(geom) 
+                             from input_points),200),ST_Transform(geom,3068)) = true
+                             
+--7
+
+Select * from public.t2019_kar_poi_table
+where t2019_kar_poi_table.type = 'Sporting Goods Store' and
+ST_Contains(ST_Buffer((Select geom from t2019_kar_land_use_a),300),
+            t2019_kar_poi_table.geom) = true
+            
+--8 
+Select public.t2019_kar_streets.link_id,public.t2019_kar_water_lines.link_id,ST_Intersection(
+    public.t2019_kar_streets.geom,public.t2019_kar_water_lines.geom) as geom from 
+    public.t2019_kar_streets, public.t2019_kar_water_lines
+    where st_intersects(public.t2019_kar_streets.geom,public.t2019_kar_water_lines.geom) = true
