@@ -1,3 +1,5 @@
+--1
+
 create temp table a as Select distinct * from public.t2019_kar_buildings where polygon_id not in 
 (
     Select distinct t2019_kar_buildings.polygon_id from
@@ -15,7 +17,7 @@ Select public.t2019_kar_poi_table.type, count(distinct public.t2019_kar_poi_tabl
 )
 And ST_Contains(ST_Buffer(a.geom,300),public.t2019_kar_poi_table.geom)
 group by public.t2019_kar_poi_table.type
-select * from public.t2019_kar_poi_table
+
 --3
 
 Create table street_reprojected as select gid, link_id, st_name
@@ -46,13 +48,14 @@ where ST_Contains(ST_Buffer((Select ST_Makeline(geom)
                              
 --7
 
-Select * from public.t2019_kar_poi_table
+Select distinct t2019_kar_poi_table.* from public.t2019_kar_poi_table, t2019_kar_land_use_a
 where t2019_kar_poi_table.type = 'Sporting Goods Store' and
-ST_Contains(ST_Buffer((Select geom from t2019_kar_land_use_a),300),
-            t2019_kar_poi_table.geom) = true
+t2019_kar_land_use_a.type = 'Park (City/County)' and
+ST_Contains(ST_Buffer(t2019_kar_land_use_a.geom,300),t2019_kar_poi_table.geom) = true
+   
             
 --8 
-Select public.t2019_kar_streets.link_id,public.t2019_kar_water_lines.link_id,ST_Intersection(
+create table T2019_KAR_BRIDGES as Select public.t2019_kar_streets.link_id,public.t2019_kar_water_lines.link_id,ST_Intersection(
     public.t2019_kar_streets.geom,public.t2019_kar_water_lines.geom) as geom from 
     public.t2019_kar_streets, public.t2019_kar_water_lines
     where st_intersects(public.t2019_kar_streets.geom,public.t2019_kar_water_lines.geom) = true
