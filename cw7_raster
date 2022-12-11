@@ -1,0 +1,35 @@
+--Zad 3
+CREATE TABLE tmp_out AS
+SELECT lo_from_bytea(0,ST_AsGDALRaster(ST_Union(rast), 'GTiff')) AS loid
+FROM public.uk_250k;
+
+SELECT lo_export(loid, 'mosaic.tiff')
+FROM tmp_out;
+--Zad 6
+
+drop table public.uk_lake_district;
+Create table public.uk_lake_district as
+Select a.rid,a.rast 
+from public.uk_250k as a, public.main_national_parks as b
+where b.gid=1 and ST_Intersects(b.geom,a.rast)
+--Zad 7.
+CREATE TABLE tmp_out AS
+SELECT lo_from_bytea(0,ST_AsGDALRaster(ST_Union(rast), 'GTiff')) AS loid
+FROM public.uk_lake_district;
+
+SELECT lo_export(loid, 'mosaic.tiff')
+FROM tmp_out;
+--Zad 10
+drop table ndvi_lake;
+Create table ndvi_lake as
+Select ST_MapAlgebra(ST_Clip(ab.rast,cd.geom,true),ST_Clip(bc.rast,cd.geom,true),'([rast1.val]-[rast2.val])/([rast1.val]+[rast2.val])')
+from public.b04 as ab,public.b08 as bc,public.main_national_parks as cd 
+where (ST_Intersects(ab.rast,cd.geom) or ST_Intersects(ab.rast,cd.geom) ) and cd.gid=1
+--Zad.11
+drop table tmp_out;
+CREATE TABLE tmp_out AS
+SELECT lo_from_bytea(0,ST_AsGDALRaster(ST_Union(st_mapalgebra), 'GTiff')) AS loid
+FROM public.ndvi_lake;
+
+SELECT lo_export(loid, 'mosaic2.tiff')
+FROM tmp_out;

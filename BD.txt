@@ -1,0 +1,6 @@
+Zad.2.
+"C:\Program Files\PostgreSQL\14\bin\raster2pgsql.exe" -s 27700 -N -32767 -t 100x100 -I -C -M -d "C:\Users\KN\Downloads\ras250_gb\ras250_gb\data\*.tif" public.uk_250k | "C:\Program Files\PostgreSQL\14\bin\psql.exe" -d cw7 -h localhost -U postgres -p 5432
+
+Zad.9.
+"C:\Program Files\PostgreSQL\14\bin\raster2pgsql.exe" -s 27700 -N -32767 -t 100x100 -I -C -M -d "C:\Users\KN\OneDrive\Dokumenty\redndvi\B03\*.tif" public.B04 | "C:\Program Files\PostgreSQL\14\bin\psql.exe" -d cw7 -h localhost -U postgres -p 5432
+"C:\Program Files\PostgreSQL\14\bin\raster2pgsql.exe" -s 27700 -N -32767 -t 100x100 -I -C -M -d "C:\Users\KN\OneDrive\Dokumenty\redndvi\B08\*.tif" public.B08 | "C:\Program Files\PostgreSQL\14\bin\psql.exe" -d cw7 -h localhost -U postgres -p 5432
