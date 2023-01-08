@@ -1,0 +1,152 @@
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Current FME version: FME 2022.1.3.0 (20220928 - Build 22630 - WIN64)
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Student Edition (node locked-crc)
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Serial Number: EY7MAD81ELREAQ4163LQ
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Temporary License: 31 days left.
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Machine host name is: LAPTOP-3T0IUPPV
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|OS Locale Name     : pl_PL
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1250
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME API version: '4.0 20220615'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Users\KN\OneDrive\Dokumenty\GitHub\BDPNiemiecGIN/'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'cw9.fmw'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2022.1.3.0'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 22000)
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Platform: WIN64
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|System Status: 87.99 GB of disk space available in the FME temporary folder (C:\Users\KN\AppData\Local\Temp\wbrun_1673213391311_9312\fmetmp_1)
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|System Status: 7.80 GB of physical memory available
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|System Status: 31.22 GB of virtual memory available
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|START - ProcessID: 2564, peak process memory usage: 75984 kB, current process memory usage: 75984 kB
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:/Users/KN/OneDrive/Dokumenty/GitHub/BDPNiemiecGIN\wb-xlate-1673213569503_9312' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LogCountServerName' `56559' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `56348'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\KN\AppData\Roaming\Safe Software\FME\'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Using Python interpreter from `C:\Program Files\FME\fmepython39\python39.dll' with PYTHONHOME `C:\Program Files\FME\fmepython39'
+2023-01-08 22:33:00|   0.0|  0.0|INFORM|Python version 3.9 loaded successfully
+2023-01-08 22:33:00|   0.2|  0.2|INFORM|FME_BEGIN_PYTHON: evaluating python script from string...
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME_BEGIN_PYTHON: python script execution complete.
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;C:\Users\KN\OneDrive\Dokumenty\FME\Formats
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Shared folders for transformers are : C:\Users\KN\AppData\Roaming\Safe Software\FME\Packages\22630-win64\transformers;C:\Program Files\FME\transformers;C:\Users\KN\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\KN\OneDrive\Dokumenty\FME\CoordinateSystems
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\KN\OneDrive\Dokumenty\FME\CoordinateSystemExceptions
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\KN\OneDrive\Dokumenty\FME\CoordinateSystemGridOverrides
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\KN\OneDrive\Dokumenty\FME\CsmapTransformationExceptions
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\KN\OneDrive\Dokumenty\FME\TransformerCategories
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Current working folder is `C:\Users\KN\OneDrive\Dokumenty\GitHub\BDPNiemiecGIN'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\KN\AppData\Local\Temp\wbrun_1673213391311_9312\fmetmp_1', set from environment variable `FME_TEMP'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\KN\AppData\Local\Temp'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 23.41 GB
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 17.56 GB
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Creating writer for format: 
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Creating reader for format: 
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding SHAPEFILE Reader with keyword SHAPEFILE_2
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2023-01-08 22:33:00|   0.2|  0.0|INFORM|Creating reader for format: Esri Shapefile
+2023-01-08 22:33:00|   0.3|  0.1|INFORM|Trying to find a DYNAMIC plugin for reader named `SHAPEFILE'
+2023-01-08 22:33:00|   0.3|  0.0|INFORM|Loaded module 'SHAPEFILE' from file 'C:\Program Files\FME\plugins/shapefile_dbase.dll'
+2023-01-08 22:33:00|   0.3|  0.0|INFORM|FME API version of module 'shapefile_dbase' matches current internal version (4.0 20220615)
+2023-01-08 22:33:00|   0.4|  0.1|INFORM|The OGC definition of the FME coordinate system 'ETRS89.PolandCS92' is 'PROJCS["ETRS_1989_Poland_CS92",GEOGCS["GCS_ETRS_1989",DATUM["D_ETRS_1989",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",-5300000.0],PARAMETER["Central_Meridian",19.0],PARAMETER["Scale_Factor",0.9993],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]'
+2023-01-08 22:33:00|   0.4|  0.0|INFORM|Shapefile reader: Reading dataset with encoding 'UTF-8' as determined by 'Codepage File'
+2023-01-08 22:33:00|   0.4|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2023-01-08 22:33:00|   0.4|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2023-01-08 22:33:00|   0.4|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2023-01-08 22:33:00|   0.4|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20220615)
+2023-01-08 22:33:00|   0.5|  0.1|INFORM|FME Configuration: Using FME Reprojection Engine
+2023-01-08 22:33:00|   0.5|  0.0|INFORM|Loaded module 'TextEncoderFactory' from file 'C:\Program Files\FME\plugins/TextEncoderFactory.dll'
+2023-01-08 22:33:00|   0.5|  0.0|INFORM|FME API version of module 'TextEncoderFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:00|   0.5|  0.0|INFORM|Loaded module 'Geometry_func' from file 'C:\Program Files\FME\plugins/Geometry_func.dll'
+2023-01-08 22:33:00|   0.5|  0.0|INFORM|FME API version of module 'Geometry_func' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|Loaded module 'HTTPFactory' from file 'C:\Program Files\FME\plugins/HTTPFactory.dll'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|FME API version of module 'HTTPFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|Loaded module 'StringReplacerFactory' from file 'C:\Program Files\FME\plugins/StringReplacerFactory.dll'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|FME API version of module 'StringReplacerFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|Loaded module 'AttributeKeeperFactory' from file 'C:\Program Files\FME\plugins/AttributeKeeperFactory.dll'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|FME API version of module 'AttributeKeeperFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|Loaded module 'XFMapFactory' from file 'C:\Program Files\FME\plugins/XFMapFactory.dll'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|FME API version of module 'XFMapFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|Loaded module 'StatisticsCalculatorFactory' from file 'C:\Program Files\FME\plugins/StatisticsCalculatorFactory.dll'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|FME API version of module 'StatisticsCalculatorFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|SentinelDownloader_StatisticsCalculator_2 (StatisticsCalculatorFactory): The following statistics will be calculated 'date{3}.max'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|Loaded module 'JSONQueryFactory' from file 'C:\Program Files\FME\plugins/JSONQueryFactory.dll'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|FME API version of module 'JSONQueryFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|Loaded module 'QueryFactory' from file 'C:\Program Files\FME\plugins/QueryFactory.dll'
+2023-01-08 22:33:01|   0.5|  0.0|INFORM|FME API version of module 'QueryFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.6|  0.1|INFORM|SentinelDownloader_StatisticsCalculator (StatisticsCalculatorFactory): The following statistics will be calculated '_count'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|Loaded module 'RasterProperties_func' from file 'C:\Program Files\FME\plugins/RasterProperties_func.dll'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|FME API version of module 'RasterProperties_func' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|Loaded module 'RasterNodata_func' from file 'C:\Program Files\FME\plugins/RasterNodata_func.dll'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|FME API version of module 'RasterNodata_func' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|Loaded module 'RasterEvaluationFactory' from file 'C:\Program Files\FME\plugins/RasterEvaluationFactory.dll'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|FME API version of module 'RasterEvaluationFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|Loaded module 'RasterPaletteAttributes_func' from file 'C:\Program Files\FME\plugins/RasterPaletteAttributes_func.dll'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|FME API version of module 'RasterPaletteAttributes_func' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|Loaded module 'ClipperFactory' from file 'C:\Program Files\FME\plugins/ClipperFactory.dll'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|FME API version of module 'ClipperFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|Loaded module 'RasterStatisticsFactory' from file 'C:\Program Files\FME\plugins/RasterStatisticsFactory.dll'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|FME API version of module 'RasterStatisticsFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|Loaded module 'PythonFactory' from file 'C:\Program Files\FME\plugins/PythonFactory.dll'
+2023-01-08 22:33:01|   0.6|  0.0|INFORM|FME API version of module 'PythonFactory' matches current internal version (4.0 20220615)
+2023-01-08 22:33:01|   0.7|  0.1|INFORM|FME Configuration: Source coordinate system for reader SHAPEFILE_2[SHAPEFILE] set to `ETRS89.PolandCS92' as read from input data
+2023-01-08 22:33:01|   0.7|  0.0|INFORM|Coordinate System `ETRS89.PolandCS92' parameters: CS_NAME=`ETRS89.PolandCS92' DESC_NM=`ETRS89 / Poland CS92' DT_NAME=`ETRS89/01' EPSG_QD=`-1' GROUP=`EUROPE' MAP_SCL=`1' MAX_LAT=`56.65' MAX_LNG=`25.416666666666668' MIN_LAT=`48.333333333333336' MIN_LNG=`12.883333333333333' PARM1=`19' PROJ=`TM' QUAD=`1' SCL_RED=`0.9993' SOURCE=`EPSG, V6.3, 2180 [Medium and small scale topographic mappi]' UNIT=`Meter' X_OFF=`500000' Y_OFF=`-5300000' ZERO_X=`0.0001' ZERO_Y=`0.0001'
+2023-01-08 22:33:01|   0.7|  0.0|INFORM|Powiaty Feature Recorder -1 2147549208 (RecorderFactory): Splitting bulk features into individual features
+2023-01-08 22:33:01|   0.7|  0.0|INFORM|CS-MAP Reprojector: Transformation will be automatically selected for 'ETRS89.PolandCS92' -> 'LL84', and is not guaranteed to remain the same in future releases of FME
+2023-01-08 22:33:01|   0.7|  0.0|INFORM|Reprojector: Using transformation `ETRS89/01_to_WGS84,Forward(Geocentric)' when reprojecting from ETRS89.PolandCS92 to LL84
+2023-01-08 22:33:01|   1.2|  0.5|INFORM|MULTI_READER(MULTI_READER): Done reading 380 features from 1 readers
+2023-01-08 22:33:01|   1.3|  0.1|INFORM|Emptying factory pipeline
+2023-01-08 22:33:01|   1.3|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 380 input feature(s), wrote 380 output feature(s): 380 matched merge filters, 380 were routed to output, 0 could not be routed.
+2023-01-08 22:33:01|   1.3|  0.0|STATS |Unwanted Router Input Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-01-08 22:33:01|   1.3|  0.0|STATS |Powiaty_SHAPEFILE_2 Splitter (TeeFactory): Cloned 380 input feature(s) into 380 output feature(s)
+2023-01-08 22:33:01|   1.3|  0.0|STATS |Tester (TestFactory): Tested 380 input feature(s) -- 1 feature(s) passed and 379 feature(s) failed
+2023-01-08 22:33:01|   1.3|  0.0|STATS |Reprojector_2 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-01-08 22:33:01|   1.3|  0.0|STATS |Reprojector_2 REPROJECTED Splitter (TeeFactory): Cloned 1 input feature(s) into 2 output feature(s)
+2023-01-08 22:33:01|   1.3|  0.0|STATS |SentinelDownloader Initiator Input Collector (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-01-08 22:33:01|   1.4|  0.1|STATS |SentinelDownloader_Initiator1673213578 Input Splitter (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_GeometryFilter_InputPassThrough (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_GeometryFilter_RouterPrepper (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_GeometryFilter_Router (TestFactory): Tested 1 input feature(s) -- 1 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_Reprojector (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_TESTZDEFAULT (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_TESTMODE (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_LIST (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_SPECIFIC (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_SPECIFIC_2D_3D (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_SPECIFIC_2D (ExecuteFunctionFactory): Executed FME Functions on 0 input feature(s) -- 0 feature(s) completed and 0 feature(s) rejected
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_SPECIFIC_3D (ExecuteFunctionFactory): Executed FME Functions on 0 input feature(s) -- 0 feature(s) completed and 0 feature(s) rejected
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_BoundingBoxReplacer (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_2_TESTZDEFAULT (TestFactory): Tested 1 input feature(s) -- 1 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_2_TESTMODE (TestFactory): Tested 1 input feature(s) -- 1 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_2_LIST (TestFactory): Tested 1 input feature(s) -- 1 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_2_SPECIFIC (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.4|  0.0|STATS |SentinelDownloader_CoordinateExtractor_2_SPECIFIC_2D_3D (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:01|   1.5|  0.1|STATS |SentinelDownloader_CoordinateExtractor_2_SPECIFIC_2D (ExecuteFunctionFactory): Executed FME Functions on 0 input feature(s) -- 0 feature(s) completed and 0 feature(s) rejected
+2023-01-08 22:33:01|   1.5|  0.0|STATS |SentinelDownloader_CoordinateExtractor_2_SPECIFIC_3D (ExecuteFunctionFactory): Executed FME Functions on 0 input feature(s) -- 0 feature(s) completed and 0 feature(s) rejected
+2023-01-08 22:33:02|   1.9|  0.4|INFORM|SentinelDownloader_HTTPCaller (HTTPFactory): [1]: Starting HTTP download from 'scihub.copernicus.eu'
+2023-01-08 22:33:02|   1.9|  0.0|INFORM|SentinelDownloader_HTTPCaller (HTTPFactory): [1]: HTTP transfer summary (scihub.copernicus.eu): status code: 200, download size: 2415 bytes, DNS lookup time: 167 ms, total transfer time: 695 ms
+2023-01-08 22:33:02|   2.0|  0.1|STATS |SentinelDownloader_TestFilter_INPUT (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-01-08 22:33:02|   2.0|  0.0|STATS |SentinelDownloader_TestFilter (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:02|   2.0|  0.0|STATS |SentinelDownloader_Junction_5 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-01-08 22:33:02|   2.0|  0.0|INFORM|SentinelDownloader_XMLFragmenter (XFMapFactory): Total Results: 2 Mapped Feature(s), 1 Input Feature(s), and 0 Invalid input Feature(s)
+2023-01-08 22:33:02|   2.0|  0.0|STATS |SentinelDownloader_Tester_2 (TestFactory): Tested 2 input feature(s) -- 2 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:02|   2.0|  0.0|INFORM|SentinelDownloader_Sorter (SortFactory): Starting sorting 2 feature(s)
+2023-01-08 22:33:02|   2.0|  0.0|INFORM|SentinelDownloader_Sorter (SortFactory): Done sorting 2 feature(s)
+2023-01-08 22:33:02|   2.2|  0.2|STATS |SentinelDownloader_Sorter (SortFactory): Finished sorting a total of 2 features.
+2023-01-08 22:33:02|   2.2|  0.0|STATS |SentinelDownloader_DateTimeConverter_1 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2023-01-08 22:33:02|   2.2|  0.0|STATS |SentinelDownloader_DateTimeConverter_Rejector (TestFactory): Tested 2 input feature(s) -- 0 feature(s) passed and 2 feature(s) failed
+2023-01-08 22:33:02|   2.3|  0.1|INFORM|SentinelDownloader_StatisticsCalculator_2 (StatisticsCalculatorFactory): Processing complete
+2023-01-08 22:33:02|   2.4|  0.1|STATS |SentinelDownloader_Tester_3 (TestFactory): Tested 2 input feature(s) -- 1 feature(s) passed and 1 feature(s) failed
+2023-01-08 22:33:03|   2.7|  0.3|INFORM|SentinelDownloader_HTTPCaller_6 (HTTPFactory): [2]: Starting HTTP download from 'scihub.copernicus.eu'. Expected transfer size: 4 bytes
+2023-01-08 22:33:03|   2.7|  0.0|INFORM|SentinelDownloader_HTTPCaller_6 (HTTPFactory): [2]: HTTP Download: received 4 bytes
+2023-01-08 22:33:03|   2.7|  0.0|INFORM|SentinelDownloader_HTTPCaller_6 (HTTPFactory): [2]: HTTP transfer summary (scihub.copernicus.eu): status code: 200, download size: 4 bytes, DNS lookup time: 1 ms, total transfer time: 383 ms
+2023-01-08 22:33:03|   2.7|  0.0|WARN  |SentinelDownloader_Logger_5: Reqeusted data is ONLINE. Download will be triggered now.
+2023-01-08 22:33:03|   2.9|  0.2|STATS |SentinelDownloader_Tester_7 (TestFactory): Tested 1 input feature(s) -- 1 feature(s) passed and 0 feature(s) failed
+2023-01-08 22:33:03|   2.9|  0.0|STATS |SentinelDownloader_Logger_5_Logger (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-01-08 22:33:03|   2.9|  0.0|STATS |SentinelDownloader_Logger_5 LOGGED Splitter (TeeFactory): Cloned 1 input feature(s) into 2 output feature(s)
+2023-01-08 22:33:05|   4.8|  1.9|INFORM|SentinelDownloader_HTTPCaller_4 (HTTPFactory): [3]: Starting HTTP download from 'scihub.copernicus.eu'
+2023-01-08 22:33:05|   4.8|  0.0|INFORM|SentinelDownloader_HTTPCaller_4 (HTTPFactory): [3]: HTTP transfer summary (scihub.copernicus.eu): status code: 200, download size: 394 bytes, DNS lookup time: 3 ms, total transfer time: 1833 ms
